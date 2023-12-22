@@ -22,14 +22,6 @@ def calculate_tf(paragraph):
     tf_dict = {word: count / total_words for word, count in word_counts.items()}
     return tf_dict
 
-# def calculate_idf(paragraph_tokens):
-#     total_paragraphs = len(paragraph_tokens)
-#     word_paragraph_count = defaultdict(int)
-
-#     for paragraph in paragraph_tokens:
-#         unique_words = set(paragraph)
-#         for word in unique_words:
-#             word_paragraph_count[word] += 1
 
 def calculate_idf(document_tokens):
     total_documents = 1  # Since we're dealing with a single document
